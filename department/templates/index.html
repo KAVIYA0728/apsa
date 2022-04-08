@@ -1,0 +1,9 @@
+{% if all_departments %}
+    <ul>
+    {% for department in all_departments %}
+        <li><a href="#">{{ department.department_name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No departments are available.</p>
+{% endif %}
